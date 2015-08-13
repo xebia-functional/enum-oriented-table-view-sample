@@ -1,0 +1,41 @@
+/*
+ * Copyright (C) 2015 47 Degrees, LLC http://47deg.com hello@47deg.com
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License. You may obtain
+ * a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+"section_title_dough" = "Dough styles";
+"section_title_ingredients" = "Available ingredients";
+
+"row_dough_thickness_title" = "Thickness";
+"row_dough_cheese_border_title" = "Cheese Border";
+
+"row_ingredients_sauce_title" = "";
+"row_ingredients_olives_title" = "Olives";
+"row_ingredients_beef_title" = "Beef";
+"row_ingredients_bacon_title" = "Bacon";
+"row_ingredients_anchovies_title" = "Anchovies";
+
+"picker_sauce_tomato_title" = "Tomato";
+"picker_sauce_bbq_title" = "BBQ";
+"picker_sauce_spicy_title" = "Spicy";
+"picker_sauce_carbonara_title" = "Carbonara";
+
+"slider_thickness_thin" = "Thin";
+"slider_thickness_regular" = "Regular";
+"slider_thickness_thick" = "Thick";
+
+"order_border_cheese" = "cheese border";
+"order_border_no_cheese" = "border";
+"order_no_ingredients" = "no ingredients whatsoever";
+"order_ingredients_prefix" = "the following ingredients: ";

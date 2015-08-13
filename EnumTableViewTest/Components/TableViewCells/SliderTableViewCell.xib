@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SliderTableViewCell" customModule="EnumTableViewTest" customModuleProvider="target">
+            <rect key="frame" x="-1" y="0.0" width="419" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xam-cI-jiT">
+                        <rect key="frame" x="15" y="11" width="41" height="22"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-Mx-IEF">
+                        <rect key="frame" x="379" y="13" width="32" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-wr-i0K">
+                        <rect key="frame" x="69" y="7" width="297" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="inh-OZ-oe2"/>
+                        </constraints>
+                    </slider>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bgH-Mx-IEF" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3li-g0-mZs"/>
+                    <constraint firstItem="Xam-cI-jiT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KJ5-2N-trc"/>
+                    <constraint firstAttribute="centerY" secondItem="Xam-cI-jiT" secondAttribute="centerY" id="VQd-Q4-E7P"/>
+                    <constraint firstAttribute="centerY" secondItem="bgH-Mx-IEF" secondAttribute="centerY" id="ZSK-RO-4in"/>
+                    <constraint firstAttribute="centerY" secondItem="d7y-wr-i0K" secondAttribute="centerY" id="oSm-CE-46s"/>
+                    <constraint firstItem="bgH-Mx-IEF" firstAttribute="leading" secondItem="d7y-wr-i0K" secondAttribute="trailing" constant="15" id="tcK-fx-hom"/>
+                    <constraint firstItem="d7y-wr-i0K" firstAttribute="leading" secondItem="Xam-cI-jiT" secondAttribute="trailing" constant="15" id="yAa-Rw-cv7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblTitle" destination="Xam-cI-jiT" id="h7Y-wO-k4X"/>
+                <outlet property="lblValue" destination="bgH-Mx-IEF" id="Qka-B3-SVG"/>
+                <outlet property="slider" destination="d7y-wr-i0K" id="qcl-3b-m2f"/>
+            </connections>
+            <point key="canvasLocation" x="255.5" y="447"/>
+        </tableViewCell>
+    </objects>
+</document>

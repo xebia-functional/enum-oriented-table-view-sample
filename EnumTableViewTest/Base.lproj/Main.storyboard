@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" customModule="EnumTableViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="ouE-Ad-GAO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="dzO-J1-b55"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="OJo-B5-DIx"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-sa-Xov">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.51777878242647013" green="0.52701206445794568" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Order Pizza">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressOrderButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QRq-BD-ztg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wXd-sa-Xov" firstAttribute="top" secondItem="ouE-Ad-GAO" secondAttribute="bottom" id="0Hj-d4-yQ8"/>
+                            <constraint firstItem="ouE-Ad-GAO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="AUH-6l-Oai"/>
+                            <constraint firstItem="ouE-Ad-GAO" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="CiR-rh-6D5"/>
+                            <constraint firstItem="wXd-sa-Xov" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="V3D-CC-ZbQ"/>
+                            <constraint firstAttribute="trailing" secondItem="wXd-sa-Xov" secondAttribute="trailing" id="cwj-BG-hAT"/>
+                            <constraint firstAttribute="trailing" secondItem="ouE-Ad-GAO" secondAttribute="trailing" id="f2r-2e-DJa"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="wXd-sa-Xov" secondAttribute="bottom" id="frX-7g-iaP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ouE-Ad-GAO" secondAttribute="bottom" constant="50" id="wCW-g6-MOa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblMain" destination="ouE-Ad-GAO" id="JTE-Wz-pqq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
